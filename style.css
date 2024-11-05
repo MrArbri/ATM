@@ -21,10 +21,18 @@ input {
     border: 1px solid round #ccc;
 }
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+     -webkit-appearance: none;
+    margin: 0;
+    padding: 5px;
+    border: 1px solid round #ccc;
+}
+
 button[type="submit"] {
     display: none;
-  }
+}
 
-  #total-section {
+#total-section {
     display: none;
-  }
+}

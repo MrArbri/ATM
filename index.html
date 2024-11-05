@@ -9,9 +9,8 @@
   <body>
     <div class="container">
       <h1>ATM</h1>
-      <h4>Enter the amount you want to calculate and press Enter.</h4>
+      <h4>Type the amount you want to calculate and press Enter.</h4>
       <form id="atmForm">
-        <label for="amount">Amount </label>
         <input
           type="number"
           id="amount"
@@ -20,11 +19,13 @@
         />
         <br /><br />
         <div id="total-section">
-          <label for="total">Total </label>
-          <span id="total">0 notes and coins</span>
+          <label
+            >Total <b><span id="total">0</span></b> notes and coins</label
+          >
         </div>
         <br /><br />
         <button type="submit">Calculate</button>
+        <a href="https://github.com/MrArbri/ATM">Check on GitHub</a>
       </form>
     </div>
     <script src="script.js"></script>
