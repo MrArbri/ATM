@@ -13,7 +13,7 @@ function minNotesCoins(amount) {
 document.addEventListener("DOMContentLoaded", function() {
     const form = document.getElementById("atmForm");
     const amountInput = document.getElementById("amount");
-    const totalInput = document.getElementById("total");
+    const totalDisplay = document.getElementById("total");
     const totalSection = document.getElementById("total-section"); 
 
     form.addEventListener("submit", function(event) {
@@ -22,10 +22,10 @@ document.addEventListener("DOMContentLoaded", function() {
         const amount = parseInt(amountInput.value);
 
         if (isNaN(amount) || amount <= 0) {
-            totalInput.value = "Invalid amount"; 
+            totalDisplay.textContent = "Invalid amount"; 
         } else {
             const result = minNotesCoins(amount);
-            totalInput.value = result; 
+            totalDisplay.textContent = result; 
             totalSection.style.display = "block";
         }
     });
